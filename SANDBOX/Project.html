@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feline Sleep Behaviors</title>
+    
+    <!-- Importing Custom Typography from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Color Scheme and Base UI Layout Structure */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --background-color: #fcfcfc;
+            --surface-color: #ffffff;
+            --text-color: #34495e;
+            --border-radius: 12px;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            background-color: var(--surface-color);
+            max-width: 800px;
+            margin: 40px 20px;
+            padding: 50px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Custom Typography for Headings */
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        /* List Styling */
+        ul {
+            background-color: #fef9f5;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px 20px 20px 40px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin: 20px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        li strong {
+            color: var(--primary-color);
+        }
+
+        /* Image Gallery Layout */
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        img {
+            width: 33%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Link Styling */
+        a {
+            color: var(--secondary-color);
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px dashed var(--secondary-color);
+            transition: color 0.2s, border-bottom 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+            main {
+                padding: 30px 20px;
+                margin: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Understanding Feline Sleep Behaviors</h1>
+        
+        <section>
+            <p>Cats spend a large portion of their lives asleep, and their sleeping habits can tell us a lot about their physical and mental state. Have you ever noticed a cat flopping or twitching its tail while snoozing?</p>
+            
+            <h2>Why Do Cats Flop Their Tails While Sleeping?</h2>
+            <p>Even when seemingly fast asleep, cats remain partially aware of their surroundings. A moving or flopping tail during sleep often indicates a few different things:</p>
+            
+            <!-- Requirement: A list with at least three items -->
+            <ul>
+                <li><strong>Active Dreaming:</strong> They might be vividly dreaming about hunting, running, or playing.</li>
+                <li><strong>Environmental Awareness:</strong> Their brains are still tracking sounds or movements in the room without fully waking up.</li>
+                <li><strong>Mild Annoyance:</strong> A sudden noise or a slight breeze might bother them just enough to elicit a tail flick, but not enough to interrupt their nap.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Gallery of Sleeping Cats</h2>
+            <p>Below are a few examples of different feline sleeping positions.</p>
+            
+            <!-- Requirement: Include at least three images -->
+            <div class="image-gallery">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=800&q=80" alt="Cat curled up in a tight sleeping position">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=800&q=80" alt="Cat sleeping on its back with paws relaxed">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=80" alt="Cat stretched out asleep in a relaxed sleeping position">
+            </div>
+        </section>
+
+        <section>
+            <h2>Learn More</h2>
+            <!-- Requirement: Include at least one link to an external source -->
+            <p>To read more about why cats sleep so much and what their physical movements mean, check out this <a href="https://www.petmd.com/cat/general-health/why-do-cats-sleep-so-much" target="_blank" rel="noopener noreferrer">veterinary article on feline sleep patterns</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
